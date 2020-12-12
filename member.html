@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy_Demo1</title>
+    <link rel="icon" href="img/layout/logo-icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/member.min.css">
+    <link rel="stylesheet" href="css/clender/datepicker.min.css">
+
+</head>
+
+<body>
+    <div class="wrap">
+        <nav class="nav-layout"></nav>
+        <article>
+            <div class="container bg-white pl-0 pr-0">
+                <nav class="mt-4 mb-4">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-link active" id="nav-home-tab" onClick="changeSubNav(1)" data-toggle="tab"
+                            href="#Personal-information" aria-selected="true">個人資訊</a>
+                        <a class="nav-link" id="nav-pay-tab" onClick="changeSubNav(2)" data-toggle="tab"
+                            href="#store-money" aria-selected="false">商店購物金</a>
+                        <a class="nav-link" id="nav-msg-tab" onClick="changeSubNav(3)" data-toggle="tab" href="#message"
+                            aria-selected="false">訊息</a>
+                        <a class="nav-link" id="nav-order-tab" onClick="changeSubNav(4)" data-toggle="tab" href="#order"
+                            aria-selected="false">訂單</a>
+                        <a class="nav-link" id="nav-list-tab" onClick="changeSubNav(5)" data-toggle="tab"
+                            href="#tracking-list" aria-selected="false">追蹤清單</a>
+                    </div>
+                </nav>
+                <div class="tab-content mb-5" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="Personal-information">
+                        <div class="member-name-group d-flex align-items-center mb-4">
+                            <img src="img/member/user.svg" alt="">
+                            <p class="member ml-3 mr-4 mb-0">Paual</p>
+                            <div class="level">
+                                一般會員
+                            </div>
+                        </div>
+
+                        <div class="member-file-group d-flex align-items-center mb-3">
+                            <img src="img/member/file.svg" alt="">
+                            <p class="ml-3 mr-4 mb-0">會員資料</p>
+                            <a href="#" class="edit-btn">編輯</a>
+                        </div>
+
+                        <form action="#">
+                            <div class="container form-area">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row input-item ">
+                                            <label for="name" class="col-md-2"><span style="color: #FB6340;">*</span>
+                                                姓名</label>
+                                            <input type="text" class="name col-md-9" id="name" placeholder="請輸入姓名">
+                                        </div>
+
+                                        <div class="row input-item">
+                                            <label for="email" class="col-md-2 "><span
+                                                    style="color: #FB6340;">*</span>電子郵件</label>
+                                            <input type="text" class="email col-md-9" id="email" placeholder="請輸入email">
+                                        </div>
+
+                                        <div class="row input-item">
+                                            <label for="email" class="col-md-2">性別</label>
+                                            <div class="col-md-9 d-flex">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                                        id="exampleRadios1" value="option1" checked>
+                                                    <label class="form-check-label" for="exampleRadios1">
+                                                        男
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                                        id="exampleRadios2" value="option2">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        女
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row input-item calender-item ">
+                                            <label for="calender" class="col-md-2">生日</label>
+                                            <input type="calender" data-toggle="datepicker" class="calender col-md-9"
+                                                id="calender" placeholder="請選擇生日" style="color: #707070;">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="row input-item">
+                                            <label for="tel" class="col-md-2"><span
+                                                    style="color: #FB6340;">*</span>聯絡電話</label>
+                                            <input type="tel" class="tel col-md-9" id="tel" placeholder="請輸入手機">
+                                        </div>
+
+                                        <div class="row input-item ">
+                                            <label for="" class="col-md-2">地址</label>
+                                            <select type="text" class="address col-md-9" id="address"
+                                                placeholder="請選擇縣市">
+                                                <option value="">台北市</option>
+                                                <option value="">台中市</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="row input-item">
+                                            <label for="tel" class="col-md-2"></label>
+                                            <select type="text" class="address col-md-9" id="address"
+                                                placeholder="請選擇地區">
+                                                <option value="">請選擇地區</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="row input-item">
+                                            <label for="address" class="col-md-2"></label>
+                                            <input type="text" class="address col-md-9" id="tel" placeholder="請輸入地址">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="submit-right">
+                                    <button type="submit" class="btn submit-btn">儲存</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="store-money">
+                        <div class="store-money-wrap">
+                            <h3><i class="fas fa-caret-right mr-1"></i>現有購物金<span class="ml-3">0</span></h3>
+                            <p>購物金紀錄</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">日期</th>
+                                        <th scope="col">項目</th>
+                                        <th scope="col">款項</th>
+                                        <th scope="col">到期日</th>
+                                        <th scope="col">餘額</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <div class="no-record">
+                                <img src="img/member/no-record.svg" alt="">
+                                <p>尚未有紀錄</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="message">
+                        <div class="no-msg">
+                            <img src="img/member/no-msg.svg" alt="">
+                            <p>尚未有訊息</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="order">
+                        <div class="status-bar">
+                            <p class="mr-auto">訂單日期 2020/11/23</p>
+                            <div class="process-item">
+                                <img src="img/checkout/transport.svg" class="d-none d-md-inline" alt="">
+                                <p class="border-right">訂單確認中</p>
+                                <p class="text-orange">處理中</p>
+                            </div>
+                        </div>
+                        <div class="content-wrap">
+                            <div class="row no-gutters content">
+                                <div class="col-2 col-lg-1 img-wrap">
+                                    <img src="img/checkout/item.jpg" class="conetnt-img" alt="">
+                                </div>
+                                <div class="col-10 col-lg-11 info-wrap pl-4">
+                                    <h3>玩具總動員方形收納箱(共10款)</h3>  
+                                </div>
+                                <div class="col-2">
+                                    <p>規格：三眼怪</p>
+                                    <p>數量：1</p>
+                                    <p class="price">$1,200</p></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 offset-lg-6 col-lg-6">
+                                    <div class="content-wrap-footer">
+                                        <a href="order-page-inner.html" class="btn">查看訂單詳情</a>
+                                        <div class="total">
+                                            <p>訂單金額:
+                                                <span>$1,200</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tracking-list">
+                        <div class="row no-gutters tracking-list-wrap">
+                            <div class="col-md-7 info">
+                                <img src="img/member/like-item-1.jpg" class="list-img" alt="">
+                                <a href="#">KAIYODO 海洋堂 山口遺產 特攝轉輪 迪士尼 玩具總動員 胡迪 WOODY</a>
+                                <div class="price">$1,600</div>
+                            </div>
+                            <div class="col-md-5 item-wrap">
+                                <div class="add-shoppingCar">
+                                    <a href="#" class="btn">加入購物車</a>
+                                </div>
+                                <div class="btn delete-item">
+                                    <img src="img/member/delete.svg" class="delete-icon" width="16" alt="">
+                                    <span class="ml-2">刪除</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row no-gutters tracking-list-wrap">
+                            <div class="col-md-7 info">
+                                <img src="img/member/like-item-2.jpg" class="list-img" alt="">
+                                <a href="#">KAIYODO 海洋堂 山口遺產 特攝轉輪 迪士尼 玩具總動員 胡迪 WOODY</a>
+                                <div class="price">$1,600</div>
+                            </div>
+                            <div class="col-md-5 item-wrap">
+                                <div class="add-shoppingCar">
+                                    <a href="#" class="btn">加入購物車</a>
+                                </div>
+                                <div class="btn delete-item">
+                                    <img src="img/member/delete.svg" class="delete-icon" width="16" alt="">
+                                    <span class="ml-2">刪除</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <footer class="footer"></footer>
+    </div>
+
+
+    <div class="fixed-btn"></div>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/base.js"></script>
+
+    <!--calender js-->
+    <script src="js/calender/datepicker.common.js"></script>
+    <script src="js/calender/datepicker.esm.js"></script>
+    <script src="js/calender/datepicker.js"></script>
+    <script src="js/calender/datepicker.min.js"></script>
+
+
+
+    <script>
+        function subNav(curItemActive) {
+            if (!curItemActive) {
+                curItemActive = 1;
+            }
+
+            $(".nav-link").removeClass("active");
+            $(".tab-pane").removeClass("active show");
+            switch (+curItemActive) {
+                //個人資訊
+                case 1:
+                    $("#Personal-information").addClass("show active");
+                    $("#nav-home-tab").addClass("active");
+                    break;
+                //商店購物金
+                case 2:
+                    $("#store-money").addClass("show");
+                    $("#nav-pay-tab,#store-money").addClass("active");
+                    break;
+                //訊息
+                case 3:
+                    $("#message").addClass("show");
+                    $("#nav-msg-tab, #message").addClass("active");
+                    break;
+                //訂單
+                case 4:
+                    $("#order").addClass("show");
+                    $("#nav-order-tab, #order").addClass("active");
+                    break;
+                //追蹤清單
+                case 5:
+                    $("#tracking-list").addClass("show");
+                    $("#nav-list-tab, #tracking-list").addClass("active");
+                    break;
+            }
+        }
+
+        //取出localstorage的值
+        let curItemActive = localStorage.getItem("itemActive");
+        subNav(curItemActive);
+
+        //change 個人資訊| 商店購物金 | 訊息 | 訂單 | 追蹤清單
+        function changeSubNav(index) {
+            localStorage.setItem("itemActive", index);
+            subNav(index);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy_Demo1</title>
+    <link rel="icon" href="img/layout/logo-icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/checkout_step2.min.css">
+</head>
+
+<body>
+    <div id="wrap" class="wrap">
+        <nav class="nav-layout"></nav>
+        <section>
+            <div class="container">
+                <div class="step-group">
+                    <div class="step-item">
+                        <span class="round">1</span>
+                        <span>確認購物車</span>
+                        <img src="img/checkout/disabled.svg" alt="">
+                    </div>
+
+                    <div class="step-item">
+                        <span class="round active">2</span>
+                        <span>付款與運送方式</span>
+                        <img src="img/checkout/focus.svg" alt="">
+                    </div>
+
+                    <div class="step-item">
+                        <span class="round">3</span>
+                        <span>資料填寫</span>
+                        <img src="img/checkout/disabled.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="card">
+                    <h3>付款方式</h3>
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                        id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        <p class="title">信用卡一次付清</p>
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                        id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        <p class="title">LINE Pay </p>
+                                    </label>
+                                    <p class="subtitle">可用LINE Points點數折抵</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                        id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        <p class="title">街口支付</p>
+                                    </label>
+                                    <p class="subtitle">可用街口儲值帳戶、銀行帳戶或台新街口聯名卡付款(需30分鐘內付款)</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="card mb-5">
+                    <h3>運送方式</h3>
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios"
+                                                id="exampleRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="exampleRadios1">
+                                                <p class="title">宅配</p>
+                                            </label>
+                                            <p class="subtitle">宅配 (未滿 NT$1,200 運費 NT$100)</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="price-red">NT$100</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios"
+                                                id="exampleRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="exampleRadios1">
+                                                <p class="title">LINE Pay </p>
+                                            </label>
+                                            <p class="subtitle">可用LINE Points點數折抵</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="price">NT$300</p>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                        id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        <p class="title">街口支付</p>
+                                    </label>
+                                    <p class="subtitle">可用街口儲值帳戶、銀行帳戶或台新街口聯名卡付款(需30分鐘內付款)</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col-md-12 transport">
+                                <p><span class="free-price">免運費</span>再湊 NT$63 享宅配免運費</p>
+                            </div>
+                            <div class="col-md-4 offset-md-8 total">
+                                <div class="row">
+                                    <div class="col-6">商品金額小計</div>
+                                    <div class="col-6 price">$1,200</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">運費總金額</div>
+                                    <div class="col-6 price">$100</div>
+                                </div>
+                                <div class="dropdown-divider"></div>
+
+                                <div class="row">
+                                    <div class="col-6">總付款金額</div>
+                                    <div class="col-6 price">
+                                        <div class="main-price">
+                                            $1,200
+                                            <p>含運費</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <a href="checkout_step3.html" class="btn next-btn" role="button"
+                                            aria-pressed="true">下一步</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer"></footer>
+    </div>
+    <div class="fixed-btn"></div>
+    <!-- <script src="js/jquery.slim.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/base.js"></script>
+
+
+</body>
+
+</html>

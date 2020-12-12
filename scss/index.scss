@@ -1,0 +1,377 @@
+@import "_color.scss";
+@import "_base.scss";
+
+.header-carousel-item {
+  height: 700px;
+}
+
+@media (max-width: 768px) {
+  .header-carousel-item {
+    height: 400px;
+  }
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.main-title {
+  h2 {
+    font-size: 30px;
+    color: $black-primary;
+    line-height: 42px;
+  }
+
+  span {
+    font-size: 20px;
+    vertical-align: baseline;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+}
+
+@media (max-width: 415px) {
+  .main-title {
+    h2 {
+      font-size: 26px;
+      color: $black-primary;
+      line-height: 42px;
+      padding-top: 3px;
+    }
+
+    img {
+      width: 30px;
+    }
+  }
+}
+
+.news-img img {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.news-info {
+  position: relative;
+  padding: 1rem;
+
+  &:after {
+    position: absolute;
+    content: "";
+    height: 100px;
+    left: 5px;
+    border-left: 4px solid#29A1F7;
+  }
+
+  h5 {
+    color: $black-primary;
+    font-weight: 600;
+  }
+}
+
+.news-btn,
+.product-btn {
+  color: #188adb;
+  width: 60%;
+  border: 2px solid $blue-primary;
+  border-radius: 6px;
+  margin: 1rem;
+}
+
+@media (max-width: 768px) {
+  .news-rwd-container {
+    padding: 0;
+  }
+
+  .card-body {
+    padding: 20px 10px;
+  }
+
+  .news-btn {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 577px) {
+  .news-rwd-container {
+    padding: 0 15px;
+  }
+}
+
+.news-btn:hover,
+.product-btn:hover {
+  color: #fff;
+  background-color: $blue-primary;
+}
+
+//更改輪播的動畫轉場方視為淡入淡出-->start
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-duration: 0.3s;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+  opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
+}
+
+.news-spacing {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+  .news-spacing {
+    margin-top: 3rem;
+  }
+}
+
+//更改輪播的動畫轉場方視為淡入淡出-->end
+.carousel-indicators {
+  .click-icon {
+    background-color: #6be8ff;
+    height: 5px;
+  }
+}
+
+.news-carousel-inner {
+  position: relative;
+}
+
+.click-icon-position {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+}
+
+.bg-color {
+  background-color: #f3f3f3;
+}
+
+// .carousel-indicators {
+//   .header-click-icon {
+//     background-color: #000000;
+//     height: 5px;
+//   }
+// }
+
+// .header-carousel-inner {
+//   position: relative;
+// }
+
+// .header-click-icon-position {
+//   position: absolute;
+//   bottom: -100px;
+// }
+
+.hot-pills {
+  .hot-menu-item {
+    color: #fff;
+    font-size: 14px;
+    border-radius: 50px;
+    font-weight: normal;
+    padding: 0.625rem 1rem;
+    margin-right: 0.625rem;
+  }
+
+  .color-orange {
+    background-color: $orange-light;
+  }
+
+  .color-blue {
+    background-color: $blue-primary;
+  }
+
+  .color-green {
+    background-color: #00b5ad;
+  }
+
+  .color-red {
+    background-color: #fb6340;
+  }
+
+  .color-pink {
+    background-color: #ff6969;
+  }
+}
+
+.hot-pills .nav-link.active,
+.hot-pills .show > .nav-link {
+  color: #fff;
+  background-color: #cfd2d4;
+  transition: 0.3s;
+}
+
+.main-menu-item:hover,
+.item:hover,
+.item-2:hover,
+.btn-blue:hover {
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+.hot-product {
+  .card-title {
+    color: $black-secondary;
+  }
+
+  .card-text {
+    color: #8b8b8b;
+  }
+
+  .price {
+    color: #fb6340;
+  }
+}
+
+.card-footer {
+  .btn {
+    background-color: $blue-primary;
+    color: #fff !important;
+    border-radius: 50px;
+    padding: 0.625rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    padding: 10px;
+  }
+
+  .hot-product {
+    .card-title {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .card-text {
+      font-size: 14px;
+    }
+
+    .price {
+      font-size: 16px;
+    }
+  }
+
+  .card-footer {
+    padding: 10px;
+
+    .btn {
+      font-size: 14px;
+      margin: 0 auto;
+      padding: 5px 20px;
+    }
+  }
+}
+
+.card-shadow {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+//修改 gutters --start
+.custom-gutters {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.col-md-3 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .custom-gutters {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+//修改 gutters --end
+
+.more-btn {
+  color: #188adb;
+  border: 2px solid $blue-primary;
+  border-radius: 6px;
+  margin: 1rem;
+}
+
+.product-btn {
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .product-btn {
+    width: 60%;
+  }
+}
+
+.banner-inner {
+  width: 372px;
+  margin-top: 16px;
+}
+@media (max-width: 415px) {
+  .banner-inner {
+    width: 380px;
+  }
+}
+@media (max-width: 376px) {
+  .banner-inner {
+    width: 360px;
+  }
+}
+
+.header-click-bottom {
+  width: 120px;
+  height: 50px;
+  background-repeat: no-repeat;
+  margin-left: 6px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.swiper-wrapper {
+  margin: 0 auto !important;
+  text-align: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgb(228, 228, 228);
+}

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy_Demo1</title>
+    <link rel="icon" href="img/layout/logo-icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.min.css">
+</head>
+
+<body>
+    <nav class="nav-layout"></nav>
+
+    <header>
+        <!-- <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner header-carousel-inner">
+                <div class="carousel-item active header-carousel-item bg-cover"
+                    style="background-image: url(img/index/banner.jpg);">
+                </div>
+                <div class="carousel-item header-carousel-item bg-cover"
+                    style="background-image: url(img/index/banner-2.jpg);">
+                </div>
+                <div class="carousel-item header-carousel-item bg-cover"
+                    style="background-image: url(img/index/banner-3.jpg);">
+                </div>
+            </div>
+
+            <ol class="carousel-indicators header-click-icon-position">
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" style="position: static; width:10%;"
+                    role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true">
+                        <img src="img/index/arrow-left.svg" alt="">
+                    </span>
+                    <span class="sr-only">Previouss</span>
+                </a>
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active header-click-icon"
+                    style="background-image: url(img/index/banner-s-1.png); width: 120px; height: 50px;"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1" class="header-click-icon"
+                    style="background-image: url(img/index/banner-s-2.jpg); width: 120px; height: 50px;"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2" class="header-click-icon"
+                    style="background-image: url(img/index/banner-s-3.jpg); width: 120px; height: 50px;"></li>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" style="position: static;  width:10%;"
+                    role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true">
+                        <img src="img/index/arrow-right.svg" alt="">
+                    </span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </ol>
+        </div> -->
+
+
+        <div class="swiper-container banner-top">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide active header-carousel-item bg-cover"
+                    style="background-image: url(img/index/banner.jpg);">
+                </div>
+                <div class="swiper-slide header-carousel-item bg-cover"
+                    style="background-image: url(img/index/banner-2.jpg);">
+                </div>
+                <div class="swiper-slide header-carousel-item bg-cover"
+                    style="background-image: url(img/index/banner-3.jpg);">
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+
+        <div class="swiper-container banner-inner">
+            <div class="swiper-wrapper header-click-wrapper">
+                <div class="swiper-slide header-click-bottom" style="background-image: url(img/index/banner-s-1.jpg);">
+                </div>
+                <div class="swiper-slide header-click-bottom" style="background-image: url(img/index/banner-s-2.jpg);">
+                </div>
+                <div class="swiper-slide header-click-bottom" style="background-image: url(img/index/banner-s-3.jpg);">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="news-spacing">
+        <div class="container news-rwd-container">
+            <div class="main-title mb-3">
+                <h2 class="m-0 pr-3"><img src="img/index/news-star.svg" class="mr-3" width="35" alt="">最新消息<span
+                        class="m-0 ml-3" style="color:#11CDEF;">NEWS</span></h2>
+
+            </div>
+
+            <!--carousel-fade 為更改輪播為淡入淡出-->
+            <div id="carouselExampleIndicators-2" class="carousel slide carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators click-icon-position">
+                    <li data-target="#carouselExampleIndicators-2" data-slide-to="0" class="active click-icon"></li>
+                    <li data-target="#carouselExampleIndicators-2" data-slide-to="1" class="click-icon"></li>
+                    <li data-target="#carouselExampleIndicators-2" data-slide-to="2" class="click-icon"></li>
+                </ol>
+                <div class="carousel-inner news-carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card news-rwd-card-body">
+                            <div class="card-body ">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-6">
+                                        <div class="news-img">
+                                            <img src="img/index/news-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="news-info d-flex mb-5">
+                                            <div class="pl-2">
+                                                <h5>Figuarts ZERO</h5>
+                                                <p>BANDAI Figuarts ZERO 超激戰 航海王 波雅・漢考克 頂上決戰
+                                                    繼白鬍子海盜，三名將軍以及路飛和其他越獄犯人之後，最後的力量-海洋七大軍閥已經抵達！
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn news-btn">
+                                            <span>查看更多</span>
+                                            <img src="img/index/btn-arrow.svg" class="pr-0" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card ">
+                            <div class="card-body news-rwd-card-body">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-6">
+                                        <div class="news-img">
+                                            <img src="img/index/news-2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="news-info d-flex mb-5">
+                                            <div class="pl-2">
+                                                <h5>BANDAI Figuarts ZERO</h5>
+                                                <p>BANDAI Figuarts ZERO 超激戰 航海王 波雅・漢考克 頂上決戰
+                                                    繼白鬍子海盜，三名將軍以及路飛和其他越獄犯人之後，最後的力量-海洋七大軍閥已經抵達！
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn news-btn">
+                                            <span>查看更多</span>
+                                            <img src="img/index/btn-arrow.svg" class="pr-0" alt="">
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-body news-rwd-card-body">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-6">
+                                        <div class="news-img">
+                                            <img src="img/index/news-3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="news-info d-flex mb-5">
+                                            <div class="pl-2">
+                                                <h5>BANDAI Figuarts</h5>
+                                                <p>BANDAI Figuarts ZERO 超激戰 航海王 波雅・漢考克 頂上決戰
+                                                    繼白鬍子海盜，三名將軍以及路飛和其他越獄犯人之後，最後的力量-海洋七大軍閥已經抵達！
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn news-btn">
+                                            <span>查看更多</span>
+                                            <img src="img/index/btn-arrow.svg" class="pr-0" alt="">
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container-fluid bg-color py-4 ">
+            <div class="container ">
+                <div class="main-title mb-5">
+                    <h2 class="m-0 pr-3"><img src="img/index/product-star.svg" class="mr-3" width="35" alt="">熱銷商品<span
+                            class="m-0 pl-3" style="color: #FBBD08;">HOT PTODUCTS</span></h2>
+                </div>
+
+                <!--tablist 預設為flex屬性 最外層可直接指定 ,套件ul裡面不可再包div會出錯-->
+                <ul class="nav justify-content-center nav-pills hot-pills mb-5" id="pills-tab" role="tablist">
+                    <li class="nav-item  mb-2" role="presentation">
+                        <a class="nav-link active hot-menu-item color-orange " id="pills-home-tab" data-toggle="pill"
+                            href="#pills-home-1" role="tab" aria-controls="pills-home" aria-selected="true">最新上架</a>
+                    </li>
+                    <li class="nav-item mb-2 " role="presentation">
+                        <a class="nav-link hot-menu-item color-blue" id="pills-profile-tab" data-toggle="pill"
+                            href="#pills-home-2" role="tab" aria-controls="pills-profile" aria-selected="false">附特典</a>
+                    </li>
+                    <li class="nav-item mb-2 " role="presentation">
+                        <a class="nav-link hot-menu-item color-green" id="pills-profile-tab" data-toggle="pill" href="#"
+                            role="tab" aria-controls="pills-profile" aria-selected="false">預購中</a>
+                    </li>
+                    <li class="nav-item mb-2 " role="presentation">
+                        <a class="nav-link hot-menu-item color-red" id="pills-profile-tab" data-toggle="pill" href="#"
+                            role="tab" aria-controls="pills-profile" aria-selected="false">即將截止預購</a>
+                    </li>
+                    <li class="nav-item mb-2 " role="presentation">
+                        <a class="nav-link hot-menu-item color-pink" id="pills-profile-tab" data-toggle="pill" href="#"
+                            role="tab" aria-controls="pills-profile" aria-selected="false">線上商店限定</a>
+                    </li>
+
+                </ul>
+
+                <div class="tab-content mb-4" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home-1" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <div class="row custom-gutters">
+                            <div class="col-6 col-md-3">
+                                <a href="product.html">
+                                    <div class="card-deck mb-3">
+                                        <div class="card hot-product card-shadow">
+                                            <img src="img/index/list-item-6.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">玩具總動員方形收納箱</h5>
+                                                <p class="card-text">台灣製造，皮克斯正版授權多種經典、最新角色可選布料...</p>
+                                                <h4 class="price">NT$1,200</h4>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-end bg-white">
+                                                <a class="text-muted btn btn-blue" href="product.html">立即選購</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                                <a href="product.html">
+                                    <div class="card-deck mb-3">
+                                        <div class="card hot-product card-shadow">
+                                            <img src="img/index/list-item-1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">玩具總動員方形收納箱</h5>
+                                                <p class="card-text">台灣製造，皮克斯正版授權多種經典、最新角色可選布料...</p>
+                                                <h4 class="price">NT$1,200</h4>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-end bg-white">
+                                                <a class="text-muted btn btn-blue" href="product.html">立即選購</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="product.html">
+                                <div class="col-6 col-md-3">
+                                    <div class="card-deck mb-3">
+                                        <div class="card hot-product card-shadow">
+                                            <img src="img/index/list-item-2.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">玩具總動員方形收納箱</h5>
+                                                <p class="card-text">台灣製造，皮克斯正版授權多種經典、最新角色可選布料...</p>
+                                                <h4 class="price">NT$1,200</h4>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-end bg-white">
+                                                <a class="text-muted btn btn-blue" href="product.html">立即選購</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="product.html">
+                                <div class="col-6 col-md-3">
+                                    <div class="card-deck mb-3">
+                                        <div class="card hot-product card-shadow">
+                                            <img src="img/index/list-item-3.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">玩具總動員方形收納箱</h5>
+                                                <p class="card-text">台灣製造，皮克斯正版授權多種經典、最新角色可選布料...</p>
+                                                <h4 class="price">NT$1,200</h4>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-end bg-white">
+                                                <a class="text-muted btn btn-blue" href="product.html">立即選購</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="row custom-gutters">
+                            <div class="col-6 col-md-3">
+                                <a href="product.html">
+                                    <div class="card-deck mb-3">
+                                        <div class="card hot-product card-shadow">
+                                            <img src="img/index/list-item-6.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">玩具總動員方形收納箱</h5>
+                                                <p class="card-text">台灣製造，皮克斯正版授權多種經典、最新角色可選布料...</p>
+                                                <h4 class="price">NT$1,200</h4>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-end bg-white">
+                                                <a class="text-muted btn btn-blue" href="product.html">立即選購</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                                <a href="product.html">
+                                    <div class="card-deck mb-3">
+                                        <div class="card hot-product card-shadow">
+                                            <img src="img/index/list-item-1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">玩具總動員方形收納箱</h5>
+                                                <p class="card-text">台灣製造，皮克斯正版授權多種經典、最新角色可選布料...</p>
+                                                <h4 class="price">NT$1,200</h4>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-end bg-white">
+                                                <a class="text-muted btn btn-blue" href="product.html">立即選購</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                                <a href="product.html">
+                                    <div class="card-deck mb-3">
+                                        <div class="card hot-product card-shadow">
+                                            <img src="img/index/list-item-2.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">玩具總動員方形收納箱</h5>
+                                                <p class="card-text">台灣製造，皮克斯正版授權多種經典、最新角色可選布料...</p>
+                                                <h4 class="price">NT$1,200</h4>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-end bg-white">
+                                                <a class="text-muted btn btn-blue" href="product.html">立即選購</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                                <a href="product.html">
+                                    <div class="card-deck mb-3">
+                                        <div class="card hot-product card-shadow">
+                                            <img src="img/index/list-item-3.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">玩具總動員方形收納箱</h5>
+                                                <p class="card-text">台灣製造，皮克斯正版授權多種經典、最新角色可選布料...</p>
+                                                <h4 class="price">NT$1,200</h4>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-end bg-white">
+                                                <a class="text-muted btn btn-blue" href="product.html">立即選購</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="tab-pane fade" id="pills-home-2" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <a href="product.html">
+                                    <div class="card-deck mb-3">
+                                        <div class="card hot-product card-shadow">
+                                            <img src="img/index/list-item-5.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">玩具總動員方形收納箱</h5>
+                                                <p class="card-text">台灣製造，皮克斯正版授權多種經典、最新角色可選布料...</p>
+                                                <h4 class="price">NT$1,200</h4>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-end bg-white">
+                                                <a class="text-muted btn btn-blue" href="product.html">立即選購</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                                <a href="product.html">
+                                    <div class="card-deck mb-3">
+                                        <div class="card hot-product card-shadow">
+                                            <img src="img/index/list-item-6.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">玩具總動員方形收納箱</h5>
+                                                <p class="card-text">台灣製造，皮克斯正版授權多種經典、最新角色可選布料...</p>
+                                                <h4 class="price">NT$1,200</h4>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-end bg-white">
+                                                <a class="text-muted btn btn-blue" href="product.html">立即選購</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                                <a href="product.html">
+                                    <div class="card-deck mb-3">
+                                        <div class="card hot-product card-shadow">
+                                            <img src="img/index/list-item-1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">玩具總動員方形收納箱</h5>
+                                                <p class="card-text">台灣製造，皮克斯正版授權多種經典、最新角色可選布料...</p>
+                                                <h4 class="price">NT$1,200</h4>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-end bg-white">
+                                                <a class="text-muted btn btn-blue" href="product.html">立即選購</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                                <a href="product.html">
+                                    <div class="card-deck mb-3">
+                                        <div class="card hot-product card-shadow">
+                                            <img src="img/index/list-item-2.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">玩具總動員方形收納箱</h5>
+                                                <p class="card-text">台灣製造，皮克斯正版授權多種經典、最新角色可選布料...</p>
+                                                <h4 class="price">NT$1,200</h4>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-end bg-white">
+                                                <a class="text-muted btn btn-blue" href="product.html">立即選購</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <a href="product.html">
+                                    <div class="card-deck mb-3">
+                                        <div class="card hot-product card-shadow">
+                                            <img src="img/index/list-item-5.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">玩具總動員方形收納箱</h5>
+                                                <p class="card-text">台灣製造，皮克斯正版授權多種經典、最新角色可選布料...</p>
+                                                <h4 class="price">NT$1,200</h4>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-end bg-white">
+                                                <a class="text-muted btn btn-blue" href="product.html">立即選購</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                                <a href="product.html">
+                                    <div class="card-deck mb-3">
+                                        <div class="card hot-product card-shadow">
+                                            <img src="img/index/list-item-6.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">玩具總動員方形收納箱</h5>
+                                                <p class="card-text">台灣製造，皮克斯正版授權多種經典、最新角色可選布料...</p>
+                                                <h4 class="price">NT$1,200</h4>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-end bg-white">
+                                                <a class="text-muted btn btn-blue" href="product.html">立即選購</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                                <a href="product.html">
+                                    <div class="card-deck mb-3">
+                                        <div class="card hot-product card-shadow">
+                                            <img src="img/index/list-item-1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">玩具總動員方形收納箱</h5>
+                                                <p class="card-text">台灣製造，皮克斯正版授權多種經典、最新角色可選布料...</p>
+                                                <h4 class="price">NT$1,200</h4>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-end bg-white">
+                                                <a class="text-muted btn btn-blue" href="product.html">立即選購</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                                <a href="product.html">
+                                    <div class="card-deck mb-3">
+                                        <div class="card hot-product card-shadow">
+                                            <img src="img/index/list-item-2.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">玩具總動員方形收納箱</h5>
+                                                <p class="card-text">台灣製造，皮克斯正版授權多種經典、最新角色可選布料...</p>
+                                                <h4 class="price">NT$1,200</h4>
+                                            </div>
+                                            <div class="card-footer d-flex justify-content-end bg-white">
+                                                <a class="text-muted btn btn-blue" href="product.html">立即選購</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="btn product-btn ">
+                    <span>查看更多</span>
+                    <img src="img/index/btn-arrow.svg" class="w-30 pr-0" alt="">
+                </a>
+            </div>
+        </div>
+
+    </section>
+    <div class="fixed-btn"></div>
+    <footer class="footer"></footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/fixed-icon.js"></script>
+    <script src="js/base.js"></script>
+
+    <script>
+        const mySwiper = new Swiper('.banner-top', {
+            loop: true,
+            thumbs: {
+                swiper: {
+                    el: '.banner-inner',
+                    slidesPerView: 3,
+                    freeMode: true,
+                    slidesPerView: 'auto',
+                },
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+
+        // var thumbsSwiper = new Swiper('#thumbs', {
+        //     spaceBetween: 10,
+        //     slidesPerView: 4,
+        //     watchSlidesVisibility: true,//防止不可点击
+        // })
+        // var gallerySwiper = new Swiper('#gallery', {
+        //     spaceBetween: 10,
+        //     thumbs: {
+        //         swiper: thumbsSwiper,
+        //     }
+        // })
+
+    </script>
+</body>
+
+</html>

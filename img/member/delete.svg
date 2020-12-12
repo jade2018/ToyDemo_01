@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="18" viewBox="0 0 14 18">
+  <g id="组_3735" data-name="组 3735" transform="translate(-5 -3)">
+    <path id="路径_1885" data-name="路径 1885" d="M15,3a1,1,0,0,1,1,1h2a1,1,0,0,1,0,2H6A1,1,0,0,1,6,4H8A1,1,0,0,1,9,3Z" fill="#ababab"/>
+    <path id="路径_1886" data-name="路径 1886" d="M6,7H18V19a2,2,0,0,1-2,2H8a2,2,0,0,1-2-2ZM9.5,9a.5.5,0,0,0-.5.5v9a.5.5,0,0,0,1,0v-9A.5.5,0,0,0,9.5,9Zm5,0a.5.5,0,0,0-.5.5v9a.5.5,0,0,0,1,0v-9A.5.5,0,0,0,14.5,9Z" fill="#ababab" fill-rule="evenodd"/>
+  </g>
+</svg>

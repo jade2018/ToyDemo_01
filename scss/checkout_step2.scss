@@ -1,0 +1,167 @@
+@import "_color.scss";
+@import "_base.scss";
+
+.container {
+  max-width: 1000px;
+}
+
+.step-group {
+  display: flex;
+  justify-content: center;
+  color: #8b8b8b;
+
+  .step-item {
+    display: flex;
+    padding: 30px 10px;
+
+    &:nth-child(2) {
+      color: $orange-light;
+    }
+
+    img {
+      fill: 000;
+    }
+
+    span {
+      display: block;
+      text-align: center;
+      line-height: 30px;
+      margin-right: 5px;
+    }
+
+    .round {
+      display: block;
+      color: #fff;
+      width: 30px;
+      height: 30px;
+      background-color: #8b8b8b;
+      border-radius: 50%;
+    }
+
+    .active {
+      background-color: $orange-light;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .step-group {
+    display: none;
+  }
+}
+
+.card {
+  color: #222222;
+  margin: 20px auto;
+
+  .card-body {
+    padding: 0 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+    color: $blue-primary;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+
+  ul {
+    padding-left: 0;
+
+    .form-check {
+      padding-top: 5px;
+    }
+
+    li {
+      list-style-type: none;
+      padding: 16px 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+
+      &:nth-child(3) {
+        border-bottom: none;
+      }
+    }
+
+    .flexinline {
+      display: flex;
+    }
+
+    .title {
+      margin-bottom: 0;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: $black-light;
+      padding-top: 2px;
+      margin-bottom: 0;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+    }
+
+    .price,
+    .price-red {
+      font-size: 18px;
+      text-align: right;
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+
+    .price-red {
+      color: #fb6340;
+    }
+  }
+}
+
+.card-footer {
+  .transport {
+    margin-top: 10px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #666666;
+  }
+
+  .free-price {
+    background-color: #f2711c;
+    border-radius: 4px;
+    color: #fff;
+    padding: 4px 10px;
+    margin-right: 8px;
+  }
+
+  .total {
+    color: #707070;
+
+    .price {
+      text-align: right;
+    }
+
+    .main-price {
+      font-size: 28px;
+      color: #fb6340;
+
+      p {
+        font-size: 13px;
+        color: #707070;
+      }
+    }
+
+    .next-btn {
+      width: 100%;
+      height: 40px;
+      color: #fff;
+      background-color: #fb9802;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: #ee9105;
+      }
+    }
+  }
+}
