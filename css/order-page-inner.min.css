@@ -28,6 +28,10 @@ body {
           flex: 1;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 .bg-orange {
   background-color: #F49F54;
 }
@@ -515,6 +519,14 @@ body {
 
 .tab-bar-wrap {
   color: #707070;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .tab-bar-wrap .back-btn .back-icon {
@@ -685,7 +697,7 @@ body {
 }
 
 .order-process-wrap .section-2 .store {
-  min-width: 15.625rem;
+  max-width: 15.625rem;
   font-size: 16px;
   padding: 1.25rem 0 1.25rem 2.5rem;
 }
@@ -694,6 +706,7 @@ body {
   position: relative;
   border-left: 1px solid #E9E9E9;
   padding: 1.25rem 0 1.25rem 2.5rem;
+  margin-left: 20px;
 }
 
 .order-process-wrap .section-2 .store-process:after {
@@ -707,17 +720,34 @@ body {
   background-color: #fb6340;
 }
 
+@media (max-width: 415px) {
+  .order-process-wrap .section-2 {
+    padding: 10px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .order-process-wrap .section-2 .store {
+    padding: 0;
+  }
+}
+
 .order-details-wrap {
   background-color: #fafafa;
   padding: 20px 20px 0;
 }
 
-.details-info-1 .details-img {
-  margin-left: 30px;
+.details-info-1 .details-info {
+  padding: 0 50px;
 }
 
 .details-info-1 .details-info h4 {
   font-size: 18px;
+}
+
+.details-info-1 .details-info .price {
+  color: #f2711c;
 }
 
 .details-info-1 p {
@@ -725,24 +755,10 @@ body {
   margin-bottom: 1px;
 }
 
-.details-info-1 .price-item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding-right: 30px;
-}
-
-.details-info-1 .price-item .price {
-  color: #f2711c;
+@media (max-width: 415px) {
+  .details-info-1 .details-info {
+    padding: 0 0 20px 66px;
+  }
 }
 
 .details-info-2 .section-1,
@@ -758,7 +774,7 @@ body {
 
 .details-info-2 .section-2.main-price {
   font-size: 20px;
-  color: #F2711C;
+  color: #f2711c;
 }
 
 .details-info-3 {
@@ -788,7 +804,7 @@ body {
 }
 
 .details-info-3 P {
-  color: #21BA45;
+  color: #21ba45;
   margin-bottom: 0;
 }
 /*# sourceMappingURL=order-page-inner.min.css.map */

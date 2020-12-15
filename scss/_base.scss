@@ -16,9 +16,13 @@ body {
   flex-direction: column;
   min-height: 100vh;
 
-  >article {
+  > article {
     flex: 1;
   }
+}
+
+p {
+  margin-bottom: 0;
 }
 
 .bg-orange {
@@ -351,7 +355,6 @@ footer {
   visibility: visible;
 }
 
-
 //top icon--> end
 
 //talk icon--> start
@@ -370,7 +373,7 @@ footer {
 
 //talk icon--> end
 
-@media(max-width:415px) {
+@media (max-width: 415px) {
   .top-btn {
     bottom: 80px;
   }
@@ -378,7 +381,6 @@ footer {
   .talk-btn {
     bottom: 140px;
   }
-
 }
 
 //行動裝置navbar

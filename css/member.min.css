@@ -28,6 +28,10 @@ body {
           flex: 1;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 .bg-orange {
   background-color: #F49F54;
 }
@@ -548,7 +552,7 @@ body {
 
 .tab-content .tab-pane {
   margin: 24px;
-  padding: 20px;
+  padding: 0 20px 20px;
 }
 
 @media (max-width: 415px) {
@@ -840,7 +844,6 @@ select {
 
 .tracking-list-wrap {
   border-bottom: 1px solid #e9e9e9;
-  padding: 20px;
 }
 
 .tracking-list-wrap:last-child {
@@ -854,6 +857,10 @@ select {
 }
 
 .tracking-list-wrap .info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -866,6 +873,7 @@ select {
 
 .tracking-list-wrap .info .price {
   color: #f2711c;
+  margin-bottom: 0;
 }
 
 .item-wrap {
@@ -881,12 +889,12 @@ select {
 
 .item-wrap .add-shoppingCar {
   width: 70%;
-  text-align: center;
 }
 
 .item-wrap .add-shoppingCar a {
   width: 140px;
   height: 36px;
+  font-size: 14px;
   color: #fff;
   background-color: #fb6340;
   padding: 6px 12px;
@@ -912,5 +920,11 @@ select {
 
 .item-wrap .delete-item .delete-icon {
   vertical-align: top !important;
+}
+
+@media (max-width: 415px) {
+  .add-shoppingCar {
+    text-align: right;
+  }
 }
 /*# sourceMappingURL=member.min.css.map */

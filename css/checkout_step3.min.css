@@ -28,6 +28,10 @@ body {
           flex: 1;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 .bg-orange {
   background-color: #F49F54;
 }
