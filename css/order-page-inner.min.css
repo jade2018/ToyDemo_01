@@ -684,6 +684,12 @@ body {
   margin-bottom: 0;
 }
 
+@media (max-width: 415px) {
+  .order-process-wrap .secion-1 .order-process-wrap .secion-1 h3 {
+    font-size: 16px;
+  }
+}
+
 .order-process-wrap .secion-1 p {
   margin-bottom: 0;
 }
@@ -777,6 +783,14 @@ body {
   color: #f2711c;
 }
 
+@media (max-width: 415px) {
+  .details-info-2 .section-1,
+  .details-info-2 .section-2 {
+    text-align: left;
+    padding: 10px 8px;
+  }
+}
+
 .details-info-3 {
   padding: 0 20px;
 }
@@ -806,5 +820,12 @@ body {
 .details-info-3 P {
   color: #21ba45;
   margin-bottom: 0;
+}
+
+@media (max-width: 415px) {
+  .details-info-3 {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=order-page-inner.min.css.map */
