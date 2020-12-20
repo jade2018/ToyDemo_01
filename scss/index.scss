@@ -1,6 +1,10 @@
 @import "_color.scss";
 @import "_base.scss";
 
+.nav-active-home {
+  color: $orange-primary !important;
+}
+
 .header-carousel-item {
   height: 700px;
 }
@@ -218,7 +222,7 @@
 }
 
 .hot-pills .nav-link.active,
-.hot-pills .show > .nav-link {
+.hot-pills .show>.nav-link {
   color: #fff;
   background-color: #cfd2d4;
   transition: 0.3s;
@@ -345,11 +349,13 @@ a:hover {
   width: 372px;
   margin-top: 16px;
 }
+
 @media (max-width: 415px) {
   .banner-inner {
     width: 380px;
   }
 }
+
 @media (max-width: 376px) {
   .banner-inner {
     width: 360px;
@@ -361,6 +367,7 @@ a:hover {
   height: 50px;
   background-repeat: no-repeat;
   margin-left: 6px;
+
   &:first-child {
     margin-left: 0;
   }
