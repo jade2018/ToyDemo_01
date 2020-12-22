@@ -50,7 +50,7 @@ var nav =
                     <ul class="navbar-nav ml-auto">  
                         <li class="nav-item header-nav-item">
                             <a class="nav-link header-nav-link text-center nav-active-home" href="index.html">首頁</a>
-                        </li>
+                        </li> 
                         
                         <li class="nav-item">
                             <a class="nav-link header-nav-link text-center nav-active-about" href="about.html">關於</a>
@@ -172,7 +172,7 @@ var nav =
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link header-sm-nav-link nav-active-about" href="#">關於</a>
+                    <a class="nav-link header-sm-nav-link nav-active-about" href="about.html">關於</a>
                 </li>
 
                 <li class="nav-item">
@@ -308,11 +308,11 @@ var nav =
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link header-sm-nav-link nav-active-sale" href="#">優惠專區</a>
+                    <a class="nav-link header-sm-nav-link nav-active-sale" href="sale.html">優惠專區</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link header-sm-nav-link nav-active-contact" href="#">聯絡我們</a>
+                    <a class="nav-link header-sm-nav-link nav-active-contact" href="contact.html">聯絡我們</a>
                 </li>
             </ul>
         </div>
