@@ -30,8 +30,16 @@ body {
   }
 }
 
-.form-main {
-  width: 100%;
+@media(max-width:768px) {
+  .form-main {
+    width: 80%;
+  }
+}
+
+@media(max-width:415px) {
+  .form-main {
+    width: 100%;
+  }
 }
 
 .google-btn-group {
