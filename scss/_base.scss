@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
 
-  > article {
+  >article {
     flex: 1;
   }
 }
@@ -494,4 +494,12 @@ footer {
   .search-sm-bar {
     width: 170px;
   }
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="radio"],
+input[type="text"] {
+  -webkit-appearance: none !important;
 }
