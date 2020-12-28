@@ -92,10 +92,10 @@ var nav =
                                     <span class="badge badge-pill ">1</span>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-car">
-                                    <h6 class="h6-text">最近加入的商品</h6>
+                                    <h6 class="text">最近加入的商品</h6>
                                     <div class="dropdown-divider"></div>
                                     <a href="product.html" class="d-flex">
-                                     <div class="dropdown-item car-list-dropdown-item p-2"  type="button">
+                                     <div class="dropdown-item car-list-dropdown-item p-2">
                                         <div class="d-flex">
                                             <div class="car-item-img mr-3">
                                                 <img src="img/layout/car-item-1.jpg" class="car-list-item" alt="">
