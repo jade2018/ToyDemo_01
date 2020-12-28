@@ -86,7 +86,7 @@ var nav =
                         
                         <li class="nav-item-dropdown">
                             <div class="dropdown">
-                                <button class="btn btn-cart " type="button" data-toggle="dropdown" aria-haspopup="true"
+                                <button class="btn btn-cart " data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
                                     <img src="img/layout/shopping-cart.svg" class="btn-car" alt="">
                                     <span class="badge badge-pill ">1</span>
@@ -111,7 +111,6 @@ var nav =
                                         </div>
                                     </div>
                                     </a>
-                                   
                                 </div>
                             </div>
                         </li>
