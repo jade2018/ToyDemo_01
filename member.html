@@ -8,8 +8,9 @@
     <link rel="icon" href="img/layout/logo-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/member.min.css">
     <link rel="stylesheet" href="css/clender/datepicker.min.css">
+    <link rel="stylesheet" href="css/member.min.css">
+    <link rel="stylesheet" href="css/test.css">
 
 </head>
 
@@ -239,21 +240,22 @@
 
 
     <div class="fixed-btn"></div>
-    <script src="js/jquery.slim.min.js"></script>
+    <!-- <script src="js/jquery.slim.min.js"></script> -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- <script src="js/calender/datepicker.common.js"></script>
+    <script src="js/calender/datepicker.esm.js"></script> -->
+    <script src="js/calender/datepicker.js"></script>
+    <!-- <script src="js/calender/datepicker.min.js"></script> -->
     <script src="js/base.js"></script>
 
     <!--calender js-->
-    <script src="js/calender/datepicker.common.js"></script>
-    <script src="js/calender/datepicker.esm.js"></script>
-    <script src="js/calender/datepicker.js"></script>
-    <script src="js/calender/datepicker.min.js"></script>
 
 
 
     <script>
         function subNav(curItemActive) {
+            $('[data-toggle="datepicker"]').datepicker();
             if (!curItemActive) {
                 curItemActive = 1;
             }

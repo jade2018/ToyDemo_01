@@ -1,5 +1,5 @@
-@import "_color.scss";
-@import "_base.scss";
+@import "color.scss";
+@import "base.scss";
 
 .nav-active-home {
   color: $orange-primary !important;
@@ -222,7 +222,7 @@
 }
 
 .hot-pills .nav-link.active,
-.hot-pills .show>.nav-link {
+.hot-pills .show > .nav-link {
   color: #fff;
   background-color: #cfd2d4;
   transition: 0.3s;

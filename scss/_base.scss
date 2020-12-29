@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
 
-  >article {
+  > article {
     flex: 1;
   }
 }
@@ -219,7 +219,7 @@ h6 {
   .fa-trash {
     font-size: 20px;
     color: #a8a8a8;
-    margin-left: 40px;
+    // margin-left: 40px;
   }
 
   :hover {

@@ -50,10 +50,10 @@ var nav =
                     <ul class="navbar-nav ml-auto">  
                         <li class="nav-item header-nav-item">
                             <a class="nav-link header-nav-link text-center nav-active-home" href="index.html">首頁</a>
-                        </li> 
+                        </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link header-nav-link text-center nav-active-about" href="about.html">關於</a>
+                            <a class="nav-link header-nav-link text-center nav-active-about" href="">關於</a>
                         </li>
                         
                         <li class="nav-item">
@@ -61,11 +61,11 @@ var nav =
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link header-nav-link text-center nav-active-sale" href="sale.html">優惠專區</a>
+                            <a class="nav-link header-nav-link text-center nav-active-sale" href="#">優惠專區</a>
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link header-nav-link text-center nav-active-contact" href="contact.html">聯絡我們</a>
+                            <a class="nav-link header-nav-link text-center nav-active-contact" href="#">聯絡我們</a>
                         </li>
                         
                         <li class="nav-item-2">
@@ -86,16 +86,16 @@ var nav =
                         
                         <li class="nav-item-dropdown">
                             <div class="dropdown">
-                                <button class="btn btn-cart " data-toggle="dropdown" aria-haspopup="true"
+                                <button class="btn btn-cart " type="button" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
                                     <img src="img/layout/shopping-cart.svg" class="btn-car" alt="">
                                     <span class="badge badge-pill ">1</span>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-car">
-                                    <h6 class="text">最近加入的商品</h6>
+                                    <h6 class="h6-text">最近加入的商品</h6>
                                     <div class="dropdown-divider"></div>
                                     <a href="product.html" class="d-flex">
-                                     <div class="dropdown-item car-list-dropdown-item p-2">
+                                     <div class="dropdown-item car-list-dropdown-item p-2"  type="button">
                                         <div class="d-flex">
                                             <div class="car-item-img mr-3">
                                                 <img src="img/layout/car-item-1.jpg" class="car-list-item" alt="">
@@ -111,6 +111,7 @@ var nav =
                                         </div>
                                     </div>
                                     </a>
+                                   
                                 </div>
                             </div>
                         </li>
@@ -138,29 +139,23 @@ var nav =
                         <img src="img/layout/shopping-cart.svg" class="btn-car" alt="">
                         <span class="badge badge-pill">1</span>
                     </button>
-                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-car">
-                        <h6 class="h6-text">最近加入的商品</h6>
-                        <div class="dropdown-divider"></div>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-car ">
+                        <h6>最近加入的商品</h6>
+                        <div class="dropdown-divider">
+                        </div>
                         <a href="product.html" class="d-flex">
-                            <div class="dropdown-item car-list-dropdown-item p-2" type="button">
-                                <div class="d-flex">
-                                    <div class="car-item-img mr-3">
-                                        <img src="img/layout/car-item-1.jpg" class="car-list-item" alt="">
-                                    </div>
-                                    <div class="car-list-info ">
-                                        <h5>玩具總動員方形收納箱...</h5>
-                                        <h6>規格:小丑</h6>
-                                        <h4>$1,200</h4>
-                                    </div>
-                                    <div class="trash">
-                                        <a href="#"><i class="fas fa-trash"></i></a>
-                                    </div>
-                                </div>
+                            <div class="car-item-img">
+                                <img src="img/layout/car-item-1.jpg" class="car-list-item" alt="">
                             </div>
+                            <div class="car-list-info flex-grow-1">
+                                <h5>玩具總動員方形收納箱...</h5>
+                                <h6>規格:小丑</h6>
+                                <h4>$1,200</h4>
+                            </div>
+                            <div class="mr-3"><i class="fas fa-trash"></i></div>
                         </a>
                     </div>
                 </div>
-                </li>
             </div>
             <img src="img/layout/hamburg.svg" class="showmenu" alt="">
         </div>
@@ -171,7 +166,7 @@ var nav =
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link header-sm-nav-link nav-active-about" href="about.html">關於</a>
+                    <a class="nav-link header-sm-nav-link nav-active-about" href="#">關於</a>
                 </li>
 
                 <li class="nav-item">
@@ -307,11 +302,11 @@ var nav =
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link header-sm-nav-link nav-active-sale" href="sale.html">優惠專區</a>
+                    <a class="nav-link header-sm-nav-link nav-active-sale" href="#">優惠專區</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link header-sm-nav-link nav-active-contact" href="contact.html">聯絡我們</a>
+                    <a class="nav-link header-sm-nav-link nav-active-contact" href="#">聯絡我們</a>
                 </li>
             </ul>
         </div>
