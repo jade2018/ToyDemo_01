@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
 
-  > article {
+  >article {
     flex: 1;
   }
 }
@@ -215,18 +215,18 @@ h6 {
   }
 }
 
-.trash {
-  .fa-trash {
-    font-size: 20px;
-    color: #a8a8a8;
-    // margin-left: 40px;
-  }
+.fa-trash {
+  font-size: 20px;
+  color: #a8a8a8;
+  margin-left: 30px;
+  transition: 0.3s;
 
-  :hover {
+  &:hover {
     color: $blue-primary;
-    transition: 0.3s;
   }
 }
+
+
 
 .car-list-dropdown-item:active {
   color: #000;
@@ -488,19 +488,18 @@ footer {
   .search-sm-bar {
     width: 200px;
   }
+
+  .dropdown-menu-right {
+    transform: translateX(10px);
+  }
 }
 
 @media (max-width: 376px) {
   .search-sm-bar {
     width: 170px;
   }
-}
 
-// input[type="button"],
-// input[type="submit"],
-// input[type="reset"],
-// input[type="radio"],
-// input[type="text"],
-// select {
-//   -webkit-appearance: none !important;
-// }
+  .dropdown-menu-right {
+    transform: translateX(50px);
+  }
+}
