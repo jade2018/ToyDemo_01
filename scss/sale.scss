@@ -1,0 +1,45 @@
+@import "_color.scss";
+@import "_base.scss";
+
+.nav-active-sale {
+    color: $orange-primary !important;
+}
+
+//包含垂直線條定位
+.header-nav-item-4,
+.header-nav-link {
+    width: 100px;
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+
+    &.header-nav-item-4 {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 3px;
+            background-color:$blue-light;
+            bottom: 0;
+            top: auto;
+            transform: translateY(3px);
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 60%;
+        background-color: #cfd2d4;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+p {
+    color: $orange-primary;
+}

@@ -48,24 +48,24 @@ var nav =
 
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">  
-                        <li class="nav-item header-nav-item">
+                        <li class="nav-item header-nav-item-1">
                             <a class="nav-link header-nav-link text-center nav-active-home" href="index.html">首頁</a>
                         </li>
                         
-                        <li class="nav-item">
-                            <a class="nav-link header-nav-link text-center nav-active-about" href="">關於</a>
+                        <li class="nav-item header-nav-item-2 ">
+                            <a class="nav-link header-nav-link text-center nav-active-about" href="about.html">關於</a>
                         </li>
                         
-                        <li class="nav-item">
+                        <li class="nav-item header-nav-item-3">
                             <a class="nav-link header-nav-link text-center nav-active-product" href="productlist.html">產品</a>
                         </li>
                         
-                        <li class="nav-item">
-                            <a class="nav-link header-nav-link text-center nav-active-sale" href="#">優惠專區</a>
+                        <li class="nav-item header-nav-item-4">
+                            <a class="nav-link header-nav-link text-center nav-active-sale" href="sale.html">優惠專區</a>
                         </li>
                         
-                        <li class="nav-item">
-                            <a class="nav-link header-nav-link text-center nav-active-contact" href="#">聯絡我們</a>
+                        <li class="nav-item header-nav-item-5">
+                            <a class="nav-link header-nav-link text-center nav-active-contact" href="contact.html">聯絡我們</a>
                         </li>
                         
                         <li class="nav-item-2">
@@ -166,7 +166,7 @@ var nav =
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link header-sm-nav-link nav-active-about" href="#">關於</a>
+                    <a class="nav-link header-sm-nav-link nav-active-about" href="about.html">關於</a>
                 </li>
 
                 <li class="nav-item">
@@ -302,11 +302,11 @@ var nav =
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link header-sm-nav-link nav-active-sale" href="#">優惠專區</a>
+                    <a class="nav-link header-sm-nav-link nav-active-sale" href="sale.html">優惠專區</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link header-sm-nav-link nav-active-contact" href="#">聯絡我們</a>
+                    <a class="nav-link header-sm-nav-link nav-active-contact" href="contact.html">聯絡我們</a>
                 </li>
             </ul>
         </div>
