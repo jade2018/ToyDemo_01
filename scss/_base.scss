@@ -1,13 +1,17 @@
-@font-face {
-  font-family: "Noto Sans";
-  src: url(../fonts/NotoSansTC-Regular.otf);
-}
+// @font-face {
+//   font-family: "Noto Sans";
+//   src: url(../fonts/NotoSansTC-Regular.otf);
+// }
 
-$font-light: "Noto Sans";
-$font-bold: "Noto Sans";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+
+$font-light: 'Noto Sans TC';
+$font-bold: 'Noto Sans TC';
 
 body {
-  font-family: "Noto Sans", "Microsoft JhengHei bold", "-apple-system-",
+  font-family: 'Noto Sans TC',
+    "Microsoft JhengHei bold",
+    "-apple-system-",
     "segoe UI", sans-serif;
 }
 
